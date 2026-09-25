@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poly-bench"
+version = "0.1.0"
+description = "Non-Memorizable, Procedural Full-Stack Benchmark Generator for Coding Agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Ahmed Hassan", email = "ahmed@example.com" }
+]
+keywords = [
+    "ai-evals",
+    "benchmark",
+    "swe-bench",
+    "procedural-generation",
+    "code-generation",
+    "claude-opus-5-5",
+    "gpt-6-astra",
+    "evals"
+]
+dependencies = []
+
+[project.scripts]
+poly-bench = "poly_bench.cli:main"
